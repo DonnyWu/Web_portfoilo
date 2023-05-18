@@ -36,4 +36,3 @@ const About = () => {
 };
 
 export default About;
-//test 2
