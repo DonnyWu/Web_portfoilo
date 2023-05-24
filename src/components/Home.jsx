@@ -11,16 +11,6 @@ const Home = () => {
       </div> */}
 
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <div className=" max-w-[800px] px-3 mx-auto flex flex-wrap justify-start blocl relative">
-          <div className="w-6/12 sm:w-4/12 px-4">
-            <img
-              src="https://media.licdn.com/dms/image/C4E03AQFn7DuU9UN8yQ/profile-displayphoto-shrink_800_800/0/1602495882730?e=1686787200&v=beta&t=C_MODcN7kVnwrSAEWjmfK6XR7g89ZVlmmg36mRduZUE"
-              alt="Profile Picture"
-              className="shadow rounded-full max-w-full h-auto align-middle border-none"
-            />
-          </div>
-        </div>
-
         <p className="text-pink-600">Hi, My name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Donnie Wu
