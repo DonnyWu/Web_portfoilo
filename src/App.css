@@ -46,28 +46,30 @@
   /* align-items: center; */
   /* justify-content: center; */
   display: inline-flex;
-  background-color: #0a192f;
+  background-color: transparent;
   /* background: #1a2238; */
 }
 
 .Message .dynamic {
-  height: 85px;
+  height: 83px;
   line-height: 90px;
   overflow: hidden;
-  background-color: #0a192f;
+  background-color: transparent;
   /* background-color: #1a2238; */
   font-size: 10px;
 }
 
 .dynamic li {
   list-style: none;
-  color: #fc6d6d;
+  position: absolute;
+  /* color: #fc6d6d; */
+  color: #ff8e2b;
   font-size: 60px;
   font-weight: 500;
   position: relative;
   top: 0;
   animation: slide 3s steps(4) 1;
-  background-color: #0a192f;
+  background-color: transparent;
 }
 
 .dynamic li :after {
@@ -76,8 +78,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #0a192f;
-  border-left: 2px solid #fc6d6d;
+  background: #0d2137;
+  /* border-left: 2px solid #fc6d6d; */
+  border-left: 2px solid #ff8e2b;
   animation: typing 3s steps(10) 1;
   animation-fill-mode: forwards;
 }

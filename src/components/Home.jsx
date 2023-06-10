@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 50,
     paddingBottom: 50,
+    position: "relative",
   },
   stretch: {
     width: 300,
@@ -20,6 +21,7 @@ const dynamic = StyleSheet.create({
   container: {
     paddingTop: 50,
     paddingBottom: 50,
+    // position: "absolute",
   },
   stretch: {
     width: 300,
@@ -31,10 +33,10 @@ const dynamic = StyleSheet.create({
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
+    <div name="home" className="w-full h-screen bg-[#0d2137]">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="Message">
-          <ul className="dynamic text-1xl">
+          <ul className="dynamic text-1xl sm:text-7xl">
             <li>
               <span>Hello World!</span>
             </li>
@@ -58,7 +60,7 @@ const Home = () => {
             </li>
           </ul>
         </div>
-        <View style={styles.container}>
+        {/* <View style={styles.container}>
           <Image
             style={styles.stretch}
             source={
@@ -66,7 +68,7 @@ const Home = () => {
             }
             alt="Profile Picture"
           />
-        </View>
+        </View> */}
         <p className="text-pink-600">Hi, My name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Donnie Wu
@@ -83,14 +85,6 @@ const Home = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
-            view work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
-        </div>
       </div>
     </div>
   );

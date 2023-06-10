@@ -1,4 +1,18 @@
 import React from "react";
+import { View, Image, StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 50,
+    paddingBottom: 50,
+  },
+  stretch: {
+    width: 300,
+    height: 300,
+    borderRadius: 400 / 2,
+    resizeMode: "stretch",
+  },
+});
 
 const About = () => {
   return (
@@ -6,6 +20,13 @@ const About = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
+            <Image
+              style={styles.stretch}
+              source={
+                "https://media.licdn.com/dms/image/C4E03AQFn7DuU9UN8yQ/profile-displayphoto-shrink_800_800/0/1602495882730?e=1686787200&v=beta&t=C_MODcN7kVnwrSAEWjmfK6XR7g89ZVlmmg36mRduZUE"
+              }
+              alt="Profile Picture"
+            />
             <p className="text-4xl font-bold inline border-b-4 border-pink-600">
               About
             </p>
