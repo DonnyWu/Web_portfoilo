@@ -60,15 +60,7 @@ const Home = () => {
             </li>
           </ul>
         </div>
-        {/* <View style={styles.container}>
-          <Image
-            style={styles.stretch}
-            source={
-              "https://media.licdn.com/dms/image/C4E03AQFn7DuU9UN8yQ/profile-displayphoto-shrink_800_800/0/1602495882730?e=1686787200&v=beta&t=C_MODcN7kVnwrSAEWjmfK6XR7g89ZVlmmg36mRduZUE"
-            }
-            alt="Profile Picture"
-          />
-        </View> */}
+        
         <p className="text-pink-600">Hi, My name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Donnie Wu

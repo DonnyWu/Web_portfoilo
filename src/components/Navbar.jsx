@@ -9,7 +9,10 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-end items-center px-4 bg-[black] text-gray-300">
+
+    // scrollbar for webview
+
+    <div className="fixed w-full h-[80px] flex justify-end items-center px-4 bg-[#FFFFFF] backdrop-filter backdrop-blur-lg bg-opacity-30 text-gray-300">
       <ul className="hidden md:flex">
         <li>
           <Link to="home" smooth={true} duration={500}>
@@ -39,6 +42,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
 
+      {/* scrollbar for mobile menu */}
       <ul
         className={
           !nav
@@ -68,27 +72,8 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* <div className='flex fixed flex-col top-[35%] left-0'>
-    <ul>
-      <li className='w-[160px] h-[100px]flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500'> 
-        <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/donnie-wu/">
-          Linkedin <FaLinkedin size={30} />
-        </a>
-      </li>
-      <li className='w-[160px] h-[100px]flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-purple-800'> 
-        <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/DonnyWu">
-          Github <FaGithub size={30} />
-        </a>
-      </li>
-      <li className='w-[160px] h-[100px]flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-800'> 
-        <a className='flex justify-between items-center w-full text-gray-300' href="/">
-          Contacts <HiMailOpen size={30} />
-        </a>
-      </li>
-    </ul>
 
-      </div> */}
-
+      {/* side link icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
