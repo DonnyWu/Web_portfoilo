@@ -5,9 +5,9 @@ import Javascript from "../logo/javascript_logo.png";
 import React_logo from "../logo/react_logo.png";
 import Github from "../logo/github_logo.png";
 
-const Skills = () => {
+const Experiences = () => {
   return (
-    <div name="skills" className="bg-[#FFFFFF] text-gray-300">
+    <div name="experiences" className="bg-[#0a192f] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
@@ -45,4 +45,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Experiences;
