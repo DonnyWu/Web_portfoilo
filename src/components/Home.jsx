@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Image, StyleSheet } from "react-native";
-import { HiArrowNarrowRight } from "react-icons/hi";
+import { GrLocation } from "react-icons/gr";
 import "../App.css";
 
 const styles = StyleSheet.create({
@@ -31,6 +31,13 @@ const dynamic = StyleSheet.create({
   },
 });
 
+const icon = StyleSheet.create({
+  container:{
+    color: "white",
+    paddingRight: 50
+  }
+})
+
 const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-[#0d2137]">
@@ -49,25 +56,17 @@ const Home = () => {
             <li>
               <span>مرحبا بالعالم!</span>
             </li>
-            <li>
-              <span>Hallo Welt!</span>
-            </li>
-            <li>
-              <span>안녕하세요!</span>
-            </li>
-            <li>
-              <span>Hej världen!</span>
-            </li>
           </ul>
         </div>
         
-        <p className="text-pink-600">Hi, My name is</p>
+        <p className="text-pink-600">My name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Donnie Wu
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          Full Stack Developer
+          A Full Stack Developer
         </h2>
+        <h3 className="flex py-2 text-[white]"><GrLocation style = {icon} size = {20}/>Boston, MA</h3>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
