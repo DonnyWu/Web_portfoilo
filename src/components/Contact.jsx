@@ -2,9 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
+    // #24305E
+    // #0E2839
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full h-screen bg-[#374785] flex justify-center items-center p-4"
     >
       <form
         method="POST"

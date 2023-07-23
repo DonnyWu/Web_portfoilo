@@ -15,8 +15,11 @@ const styles = StyleSheet.create({
 });
 
 const About = () => {
+  // #0a192f
+  // #304E62
+
   return (
-    <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full sm:grid grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold">

@@ -7,7 +7,9 @@ import Github from "../logo/github_logo.png";
 
 const Experiences = () => {
   return (
-    <div name="experiences" className="bg-[#0a192f] text-gray-300">
+    // #102E43
+    // #0a192f
+    <div name="experiences" className="bg-[#102E43] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
