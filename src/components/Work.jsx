@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState }from "react";
 import HTML from "../logo/html_logo.png";
+import ExpModal from "./InterExpModal";
 
 const Work = () => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     // #102E43
     // #0a192f
@@ -15,37 +17,34 @@ const Work = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div
+          {/* <div
             style={{ backgroundImage: `url(${HTML})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
-            <div className="opacity-0 group-hover:opacity-100">
+            <div>
               <span className="text-2xl font-bold text-white tracking-wider">
                 Place Holder
               </span>
               <div>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"></button>
-                </a>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"></button>
-                </a>
+                <button onClick={() => setOpenModal(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Description</button>
+                <ExpModal open={openModal} onClose={() => setOpenModal(false)} />
               </div>
             </div>
-          </div>
+          </div> */}
 
+          
           <div
             style={{ backgroundImage: `url(${HTML})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
+            <ExpModal open={openModal} onClose={() => setOpenModal(false)} />
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Place Holder
               </span>
               <div>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"></button>
-                </a>
+                <button onClick={() => setOpenModal(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Description</button>
+                
                 <a href="">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"></button>
                 </a>

@@ -14,6 +14,7 @@
   background-size: cover;
   background-position: center;
   height: 250px;
+
 }
 
 .content-div:hover {
@@ -22,4 +23,11 @@
     rgba(112, 157, 255, 0.8),
     hsla(242, 74%, 61%, 0.8)
   ) !important;
+}
+
+.content-div:hover::after {
+  content: " ";
+  width: 100px;
+  height: 20px;
+  position: absolute;
 }
