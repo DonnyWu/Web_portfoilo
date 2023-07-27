@@ -1,6 +1,9 @@
 import React, { useState }from "react";
 import HTML from "../logo/html_logo.png";
-import ExpModal from "./InterExpModal";
+import InterExpModal from "./Modals/InterExpModal";
+import AllscriptExpModal from "./Modals/AllscriptsExpModal";
+import interpro2 from '../logo/interpro.png';
+import Allscript from '../logo/Allscript-logo.png';
 
 const Work = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -34,20 +37,34 @@ const Work = () => {
 
           
           <div
-            style={{ backgroundImage: `url(${HTML})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            style={{ backgroundImage: `url(${interpro2})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
           >
-            <ExpModal open={openModal} onClose={() => setOpenModal(false)} />
+            <div>
+              <InterExpModal open={openModal} onClose={() => setOpenModal(false)} />
+              <div className="opacity-0 group-hover:opacity-100">
+                <span className="text-2xl font-bold text-white tracking-wider text-center">
+                  Software Engineer at <br/> InterPro Solutions
+                </span>
+                <div>
+                  <button onClick={() => setOpenModal(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg content-center">Description</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{ backgroundImage: `url(${Allscript})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
+          >
+            <AllscriptExpModal open={openModal} onClose={() => setOpenModal(false)} />
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Place Holder
+            
+              <span className="text-2xl font-bold text-white tracking-wider text-center">
+                Software Engineer Intern at Allscripts
               </span>
               <div>
-                <button onClick={() => setOpenModal(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">Description</button>
-                
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"></button>
-                </a>
+                <button onClick={() => setOpenModal(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg content-center">Description</button>
               </div>
             </div>
           </div>
