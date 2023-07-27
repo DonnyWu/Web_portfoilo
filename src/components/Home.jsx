@@ -65,15 +65,11 @@ const Home = () => {
         </h2>
         
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          I've often been asked the question of what is my favorite "tech stack"? My answers would always be the tech stack that my current projects uses. It is a necessary skill for an engineer to be able to adapt to any tech stack. <br/>  As an engineer, I am a self-starter and I take joy in learning new things, but most importantly I am a problem solver. Which is why I am excited about the opportunity to demonstrate my technical skills and continue to grow as an engineer
         </p>
-
+        {/* <p className="text-[#8892b0] py-4 max-w-[700px]">
+        As an engineer, I am a self-starter and I take joy in learning new things, but most importantly I am a problem solver. Which is why I am excited about the opportunity to demonstrate my technical skills and continue to grow as an engineer
+        </p> */}
         <h3 className="flex py-2 text-[white]">
           <div className="mr-2">
             <GrLocation style={{color: 'red'}} size = {20}/>

@@ -44,7 +44,7 @@ const Work = () => {
               <InterExpModal open={openModal} onClose={() => setOpenModal(false)} />
               <div className="opacity-0 group-hover:opacity-100">
                 <span className="text-2xl font-bold text-white tracking-wider text-center">
-                  Software Engineer at <br/> InterPro Solutions
+                  InterPro Solutions
                 </span>
                 <div>
                   <button onClick={() => setOpenModal(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg content-center">Description</button>
@@ -53,7 +53,7 @@ const Work = () => {
             </div>
           </div>
 
-          <div
+          {/* <div
             style={{ backgroundImage: `url(${Allscript})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
           >
@@ -143,7 +143,7 @@ const Work = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
           
         </div>
       </div>

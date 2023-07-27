@@ -22,20 +22,14 @@ const About = () => {
     <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full sm:grid grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold">
+          <div className="sm:text-right text-8xl font-bold">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              About <br/> Me
             </p>
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+             I graduated from the University of Massachusetts, Amherst in 2020. Since then I've been actively pursing full-stack development weather that may be from my job or personal projects, there is always something to learn! Through my journey as a software engineer I've been part of all part of the software development lifecycle. Which taught me the invaluable lesson of it takes more than just coding ability to be great engineer. Because at the end of the day it maybe that one edge case or curly bracket that shuts that the entire application, and that is what seperates an engineer to a great engineer. 
             </p>
           </div>
         </div>
