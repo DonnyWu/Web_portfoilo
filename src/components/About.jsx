@@ -29,7 +29,7 @@ const About = () => {
           </div>
           <div>
             <p>
-             I graduated from the University of Massachusetts, Amherst in 2020. Since then I've been actively pursing full-stack development weather that may be from my job or personal projects, there is always something to learn! Through my journey as a software engineer I've been part of all part of the software development lifecycle. Which taught me the invaluable lesson of it takes more than just coding ability to be great engineer. Because at the end of the day it maybe that one edge case or curly bracket that shuts that the entire application, and that is what seperates an engineer to a great engineer. 
+             I graduated from the University of Massachusetts, Amherst in 2020. Since then I've been actively pursing full-stack development weather that may be from my job or personal projects, there is always something to learn! Throughout my journey as a software engineer I've been in of all part of the software development lifecycle. Which taught me the invaluable lesson of it takes more than just coding ability to be a great engineer. But also through the use of good design, coding standards, and QA testing. Which are just as imporant for an engineer to understand.
             </p>
           </div>
         </div>

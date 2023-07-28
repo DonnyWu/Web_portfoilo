@@ -65,7 +65,7 @@ const Home = () => {
         </h2>
         
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I've often been asked the question of what is my favorite "tech stack"? My answers would always be the tech stack that my current projects uses. It is a necessary skill for an engineer to be able to adapt to any tech stack. <br/>  As an engineer, I am a self-starter and I take joy in learning new things, but most importantly I am a problem solver. Which is why I am excited about the opportunity to demonstrate my technical skills and continue to grow as an engineer
+          I've often been asked the question of what is my favorite "tech stack"? My answers would always be the tech stack that my current projects uses. Because it is even more important for an engineer to have the capacity to continue learning and apply their problem solving skills to everyday problems. Not just focusing on one "tech stack". <br/>  As an engineer, I am a self-starter and I take joy in learning new things, but most importantly I am a problem solver. Which is why I am excited about opportunities where I can demonstrate my technical skills and continue to grow as an engineer.
         </p>
         {/* <p className="text-[#8892b0] py-4 max-w-[700px]">
         As an engineer, I am a self-starter and I take joy in learning new things, but most importantly I am a problem solver. Which is why I am excited about the opportunity to demonstrate my technical skills and continue to grow as an engineer
