@@ -1,5 +1,5 @@
 import React from 'react';
-import image1 from '../../logo/interpro.png';
+import image_mitsubishi from '../../logo/mitsubishi-board.jpeg';
 import '../../Modal.css';
 
 const InterModal = ({ open, onClose }) => {
@@ -13,15 +13,15 @@ const InterModal = ({ open, onClose }) => {
         className='modalContainer'
       >
         {/* Experince logo */}
-        <img className='companyImg' src={image1} alt='/' />
+        <img className='companyImg' src={image_mitsubishi} alt='/' />
         <div className='modalRight'>
           <h1 className='title'>Details</h1>
           {/* Content Details */}
           <div className='content contentFont'>
-            <p>{'\u2022'} Implemented InterPro Solutions’ flagship application EZMaxMobile based on client’s requirements using <br/>Java, Spring Boot, JSON, Angular, Struts, Typescript, and IBM Maximo custom Business Object APIs.</p>
-            <p>{'\u2022'} Used React JS to customize the layout of InterPro Solutions’ EZMaxRequest</p>
-            <p>{'\u2022'} Used developer environment to test the UI of EZMaxMobile, confirming it is crossed-referenced with IBM Maximo</p>
-            <p>{'\u2022'} Handle incoming tickets pertaining to client’s custom built EZMaxMobile with support team and team architect</p>
+            <p>{'\u2022'} test <br/>Java, Spring Boot, JSON, Angular, Struts, Typescript, and IBM Maximo custom Business Object APIs.</p>
+                      <p>{'\u2022'} test</p>
+                      <p>{'\u2022'} test</p>
+                      <p>{'\u2022'} test</p>
           </div>
           <div className='btnContainer'>
             <button className='btnOutline' onClick={onClose}>

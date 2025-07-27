@@ -2,11 +2,14 @@ import React, { useState }from "react";
 import HTML from "../logo/html_logo.png";
 import InterExpModal from "./Modals/InterExpModal";
 import AllscriptExpModal from "./Modals/AllscriptsExpModal";
+import MitsubishiExpModal from "./Modals/MitsubishiExpModal"
 import interpro2 from '../logo/interpro.png';
 import Allscript from '../logo/Allscript-logo.png';
+import Mitsubishi from '../logo/mitsubishi.jpg';
 
 const Work = () => {
-  const [openModal, setOpenModal] = useState(false);
+    const [openModal1, setOpenModal1] = useState(false);
+    const [openModal2, setOpenModal2] = useState(false);
   return (
     // #102E43
     // #0a192f
@@ -41,18 +44,34 @@ const Work = () => {
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
           >
             <div>
-              <InterExpModal open={openModal} onClose={() => setOpenModal(false)} />
+              <InterExpModal open={openModal1} onClose={() => setOpenModal1(false)} />
               <div className="opacity-0 group-hover:opacity-100">
                 <span className="text-2xl font-bold text-white tracking-wider text-center">
                   InterPro Solutions
                 </span>
                 <div>
-                  <button onClick={() => setOpenModal(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg content-center">Description</button>
+                  <button onClick={() => setOpenModal1(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg content-center">Description</button>
                 </div>
               </div>
             </div>
           </div>
 
+            <div
+                style={{ backgroundImage: `url(${Mitsubishi})` }}
+                className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
+            >
+                <div>
+                    <MitsubishiExpModal open={openModal2} onClose={() => setOpenModal2(false)} />
+                    <div className="opacity-0 group-hover:opacity-100">
+                        <span className="text-2xl font-bold text-white tracking-wider text-center">
+                            Mitsubishi Electric Iconics Digital Solutions
+                        </span>
+                        <div>
+                            <button onClick={() => setOpenModal2(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg content-center">Description</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
           {/* <div
             style={{ backgroundImage: `url(${Allscript})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
