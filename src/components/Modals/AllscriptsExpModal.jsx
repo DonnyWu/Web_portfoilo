@@ -1,5 +1,5 @@
 import React from 'react';
-import image2 from '../../logo/Allscript-logo.png';
+import image from '../../logo/Allscripts-Platform-team.jpg';
 import '../../Modal.css';
 
 const AllscriptModal = ({ open, onClose }) => {
@@ -13,7 +13,7 @@ const AllscriptModal = ({ open, onClose }) => {
         className='modalContainer'
       >
         {/* Experince logo */}
-        <img className='companyImg' src={image2} alt='/' />
+        <img className='companyImg' src={image} alt='/' />
         <div className='modalRight'>
           <h1 className='title'>Details</h1>
           {/* Content Details */}

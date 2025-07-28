@@ -8,6 +8,7 @@ import Allscript from '../logo/Allscript-logo.png';
 import Mitsubishi from '../logo/mitsubishi.jpg';
 
 const Work = () => {
+    const [openModal0, setOpenModal0] = useState(false);
     const [openModal1, setOpenModal1] = useState(false);
     const [openModal2, setOpenModal2] = useState(false);
   return (
@@ -38,6 +39,22 @@ const Work = () => {
             </div>
           </div> */}
 
+            <div
+                style={{ backgroundImage: `url(${Allscript})` }}
+                className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
+            >
+                <div>
+                    <AllscriptExpModal open={openModal0} onClose={() => setOpenModal0(false)} />
+                    <div className="opacity-0 group-hover:opacity-100">
+                        <span className="text-2xl font-bold text-white tracking-wider text-center">
+                            Allscripts
+                        </span>
+                        <div>
+                            <button onClick={() => setOpenModal0(true)} className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg content-center">Description</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
           
           <div
             style={{ backgroundImage: `url(${interpro2})` }}
