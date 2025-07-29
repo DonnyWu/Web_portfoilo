@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaLink } from "react-icons/fa";
+import { GrNotes } from "react-icons/gr";
 import { HiMailOpen } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
@@ -33,6 +34,11 @@ const Navbar = () => {
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
+        </li>
+        <li>
+            <Link to="resume" smooth={true} duration={500}>
+                Resume
+            </Link>
         </li>
       </ul>
 
@@ -70,6 +76,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <li className="py-6 text-4xl">
+            <Link onClick={handleClick} to="resume" smooth={true} duration={500}>
+                Resume
+            </Link>
+        </li>
       </ul>
 
 
@@ -90,6 +101,14 @@ const Navbar = () => {
               href="https://github.com/DonnyWu"
             >
               Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#fff0db]">
+            <a
+               className="flex justify-between items-center w-full text-gray-300"
+               href=""
+            >
+               Resume <GrNotes size={30} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
