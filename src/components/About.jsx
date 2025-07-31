@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Image, StyleSheet } from "react-native";
+import profile from '../logo/Profile.jpg';
 
 const styles = StyleSheet.create({
   container: {
@@ -21,6 +22,13 @@ const About = () => {
   return (
     <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
       <div className="flex flex-col justify-center items-center w-full h-full">
+        <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+                className="w-20 mx-auto"
+                src={profile}
+                alt="profile"
+            />
+        </div>
         <div className="max-w-[1000px] w-full sm:grid grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-8xl font-bold">
             <p>
