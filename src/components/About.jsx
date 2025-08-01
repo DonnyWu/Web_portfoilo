@@ -15,20 +15,23 @@ const styles = StyleSheet.create({
   },
 });
 
+
 const About = () => {
   // #0a192f
   // #304E62
 
   return (
-    <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
+      <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
+          <img
+              style={{ width: 380, height: 380, borderRadius: 380 / 2, top: 380, position: "relative" }}
+              className="w-20 mx-auto"
+              src={profile}
+              alt="profile"
+          />
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img
-                className="w-20 mx-auto"
-                src={profile}
-                alt="profile"
-            />
-        </div>
+  
+        
+        
         <div className="max-w-[1000px] w-full sm:grid grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-8xl font-bold">
             <p>
