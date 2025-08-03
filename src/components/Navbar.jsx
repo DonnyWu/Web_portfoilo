@@ -4,6 +4,7 @@ import { GrNotes } from "react-icons/gr";
 import { HiMailOpen } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import pdf from '../Documents/Donnies_Resume.pdf';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -36,9 +37,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-            <Link to="resume" smooth={true} duration={500}>
+            <a
+                className="flex justify-between items-center w-full"
+                href={pdf}
+            >
                 Resume
-            </Link>
+            </a>
         </li>
       </ul>
 
@@ -77,9 +81,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-4xl">
-            <Link onClick={handleClick} to="resume" smooth={true} duration={500}>
+            <a
+                className="flex justify-between items-center w-full"
+                href={pdf}
+            >
                 Resume
-            </Link>
+            </a>
         </li>
       </ul>
 
@@ -105,8 +112,8 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#fff0db]">
             <a
-               className="flex justify-between items-center w-full text-gray-500"
-               href=""
+                className="flex justify-between items-center w-full text-gray-500"
+                href={pdf}
             >
                Resume <GrNotes size={30} />
             </a>
