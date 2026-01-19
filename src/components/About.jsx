@@ -1,19 +1,5 @@
 import React from "react";
-import { View, Image, StyleSheet } from "react-native";
 import profile from '../logo/Profile.jpg';
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 50,
-    paddingBottom: 50,
-  },
-  stretch: {
-    width: 300,
-    height: 300,
-    borderRadius: 400 / 2,
-    resizeMode: "stretch",
-  },
-});
 
 
 const About = () => {
@@ -22,13 +8,12 @@ const About = () => {
 
   return (
       <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
-          <img
-              style={{ width: 380, height: 380, borderRadius: 380 / 2, top: 380, position: "relative" }}
-              className="w-20 mx-auto"
+          <div className="flex flex-col justify-center items-center w-full h-full">
+            <img
               src={profile}
               alt="profile"
-          />
-      <div className="flex flex-col justify-center items-center w-full h-full">
+              className="mx-auto rounded-full object-cover w-32 h-32 sm:w-48 sm:h-48 md:w-96 md:h-96 mb-8"
+            />
   
         
         
