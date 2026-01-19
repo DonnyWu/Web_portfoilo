@@ -8,8 +8,8 @@ const Contact = () => {
 
 
   <div name="contact" className="w-full h-screen bg-[#374785] text-[black]">
-    <div className="flex flex-col justify-center items-center w-full h-full">
-      <div className="max-w-[1000px] w-full sm:grid grid-cols-2 gap-8 px-4">
+      <div className="flex flex-col justify-center items-center w-full h-full">
+      <div className="max-w-[1000px] w-full grid grid-cols-1 sm:grid-cols-2 gap-8 px-4">
         <div className="sm:text-right text-1xl font-bold">
 
             <form
@@ -24,7 +24,7 @@ const Contact = () => {
                 <p className="text-gray-300 py-4 text-left">Send me a message!</p>
               </div>
               <input
-                className="p-2 bg-[#ccd6f6]"
+                className="p-2 bg-[#ccd6f6] w-full"
                 type="text"
                 placeholder="Name"
                 name="name"
@@ -32,7 +32,7 @@ const Contact = () => {
               />
 
               <input
-                className="my-4 p-2 bg-[#ccd6f6]"
+                className="my-4 p-2 bg-[#ccd6f6] w-full"
                 type="email"
                 name="email"
                 placeholder="Email"
@@ -41,13 +41,13 @@ const Contact = () => {
 
               <textarea
                 name="message"
-                className="bg-[#ccd6f6] p-2"
-                rows="10"
+                className="bg-[#ccd6f6] p-2 w-full"
+                rows="6"
                 placeholder="Message"
                 required
               ></textarea>
 
-              <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex item-center">
+              <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center w-full sm:w-auto justify-center">
                 Send
               </button>                  
             </form>
@@ -60,19 +60,19 @@ const Contact = () => {
             <p className="text-gray-300 py-4 text-left font-bold">
               Connect with me on these platforms
             </p>
-            <div className="flex pt-6">
+            <div className="flex pt-6 space-x-6">
               <a
-                className="flex w-full text-gray-300"
+                className="text-gray-300 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14"
                 href="https://www.linkedin.com/in/donnie-wu/"
               >
-                <FaLinkedin size={55} />
+                <FaLinkedin className="w-full h-full" />
               </a>
 
               <a
-                className="flex w-full text-gray-300"
+                className="text-gray-300 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14"
                 href="https://github.com/DonnyWu"
               >
-                <FaGithub size={55} />
+                <FaGithub className="w-full h-full" />
               </a>
 
               
