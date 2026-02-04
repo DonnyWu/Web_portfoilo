@@ -25,7 +25,8 @@ const About = () => {
           </div>
           <div>
             <p>
-             I graduated from the University of Massachusetts, Amherst in 2020. Since then I've been actively pursing full-stack development weather that may be from my job or personal projects, there is always something to learn! Throughout my journey as a software engineer I've been in of all part of the software development lifecycle. Which taught me the invaluable lesson of it takes more than just coding ability to be a great engineer. But also through the use of good design, coding standards, and QA testing. Which are just as imporant for an engineer to understand.
+              Since graduating from the University of Massachusetts, Amherst in 2020, I have been actively pursuing full-stack development through both professional roles and personal projects, constantly driven by the need to learn. Having been involved in all stages of the software development lifecycle, I have learned that being a great engineer requires more than just coding ability; it also demands a strong foundation in good design, coding standards, and QA testing.
+             {/* I graduated from the University of Massachusetts, Amherst in 2020. Since then I've been actively pursing full-stack development weather that may be from my job or personal projects, there is always something to learn! Throughout my journey as a software engineer I've been in of all part of the software development lifecycle. Which taught me the invaluable lesson of it takes more than just coding ability to be a great engineer. But also through the use of good design, coding standards, and QA testing. Which are just as imporant for an engineer to understand. */}
             </p>
           </div>
         </div>
