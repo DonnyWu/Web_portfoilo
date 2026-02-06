@@ -31,7 +31,7 @@ const Work = () => {
             >
                 <div>
                     <MitsubishiExpModal open={openModal2} onClose={() => setOpenModal2(false)} />
-                    <div className="opacity-0 group-hover:opacity-100">
+                    <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center">
                         <span className="text-2xl font-bold text-white tracking-wider text-center">
                             Mitsubishi Electric Iconics Digital Solutions
                         </span>
@@ -48,7 +48,7 @@ const Work = () => {
           >
             <div>
               <InterExpModal open={openModal1} onClose={() => setOpenModal1(false)} />
-              <div className="opacity-0 group-hover:opacity-100">
+              <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center">
                 <span className="text-2xl font-bold text-white tracking-wider text-center">
                   InterPro Solutions
                 </span>
@@ -65,7 +65,7 @@ const Work = () => {
             >
                 <div>
                     <AllscriptExpModal open={openModal0} onClose={() => setOpenModal0(false)} />
-                    <div className="opacity-0 group-hover:opacity-100">
+                    <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center">
                         <span className="text-2xl font-bold text-white tracking-wider text-center">
                             Allscripts
                         </span>
