@@ -9,13 +9,12 @@ const About = () => {
   return (
       <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
           <div className="flex flex-col justify-center items-center w-full h-full">
-            <div className="mx-auto mb-8 rounded-full overflow-hidden shadow-md shadow-[#040c16] transform transition-transform duration-500 hover:scale-110">
-              <img
-                src={profile}
-                alt="profile"
-                className="object-cover w-32 h-32 sm:w-48 sm:h-48 md:w-96 md:h-96"
-              />
-            </div>
+            <img
+              src={profile}
+              alt="profile"
+              className="mx-auto rounded-full object-cover w-32 h-32 sm:w-48 sm:h-48 md:w-96 md:h-96 mb-8"
+            />
+          
   
         
         
