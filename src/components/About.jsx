@@ -9,11 +9,13 @@ const About = () => {
   return (
       <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
           <div className="flex flex-col justify-center items-center w-full h-full">
-            <img
-              src={profile}
-              alt="profile"
-              className="mx-auto rounded-full object-cover w-32 h-32 sm:w-48 sm:h-48 md:w-96 md:h-96 mb-8"
-            />
+            <div className="mx-auto mb-8 rounded-full overflow-hidden shadow-md shadow-[#040c16] transform transition-transform duration-500 hover:scale-110">
+              <img
+                src={profile}
+                alt="profile"
+                className="object-cover w-32 h-32 sm:w-48 sm:h-48 md:w-96 md:h-96"
+              />
+            </div>
   
         
         
@@ -25,8 +27,7 @@ const About = () => {
           </div>
           <div>
             <p>
-              Since graduating from the University of Massachusetts, Amherst in 2020, I have been actively pursuing full-stack development through both professional roles and personal projects, constantly driven by the need to learn. Having been involved in all stages of the software development lifecycle, I have learned that being a great engineer requires more than just coding ability; it also demands a strong foundation in good design, coding standards, and QA testing.
-             {/* I graduated from the University of Massachusetts, Amherst in 2020. Since then I've been actively pursing full-stack development weather that may be from my job or personal projects, there is always something to learn! Throughout my journey as a software engineer I've been in of all part of the software development lifecycle. Which taught me the invaluable lesson of it takes more than just coding ability to be a great engineer. But also through the use of good design, coding standards, and QA testing. Which are just as imporant for an engineer to understand. */}
+             I graduated from the University of Massachusetts, Amherst in 2020. Since then I've been actively pursing full-stack development weather that may be from my job or personal projects, there is always something to learn! Throughout my journey as a software engineer I've been in of all part of the software development lifecycle. Which taught me the invaluable lesson of it takes more than just coding ability to be a great engineer. But also through the use of good design, coding standards, and QA testing. Which are just as imporant for an engineer to understand.
             </p>
           </div>
         </div>
