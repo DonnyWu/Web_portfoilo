@@ -1,142 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* Modal Button */
-  .modalButton {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    padding: 12px 24px;
-  }
-  
-  
-  /* Modal */
-  .overlay {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    z-index: 50;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
 
+/* Modal Button */
+.modalButton {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 12px 24px;
+}
+
+
+/* Modal */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 1rem;
+  z-index: 50;
+}
+
+.modalContainer {
+  max-width: 900px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(180deg, #E8F2FF 0%, #C9E3FF 100%);
+  color: #0b2e3c;
+  box-shadow: 0 10px 30px rgba(11,46,60,0.12);
+  border-radius: 16px;
+  max-height: 90vh;
+  overflow: auto;
+  border: 1px solid rgba(11,46,60,0.06);
+}
+
+.companyImg {
+  width: 40%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: block;
+  background: transparent;
+}
+
+.title {
+  text-align: center;
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b2e3c;
+  letter-spacing: 0.2px;
+}
+
+.contentFont {
+  color: #0b2e3c;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.content p {
+  margin-bottom: 0.6rem;
+}
+
+.modalRight {
+  width: 60%;
+  padding: 0.5rem 1rem;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  padding: 1rem 1rem;
+}
+
+.btnContainer {
+  display:flex;
+  padding: 1rem 1rem;
+  justify-content: center;
+}
+.btnContainer button {
+  width: 50%;
+  margin: .5rem;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(16,46,67,0.08);
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.btnPrimary {
+  background: linear-gradient(90deg, #24305E 0%, #102E43 100%);
+  color: #ffffff;
+  border: none;
+}
+
+.btnOutline {
+  background: #ffffff;
+  color: #102E43;
+  border: 1px solid rgba(16,46,67,0.12);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
   .modalContainer {
-    max-width: 900px;
-    width: 90%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 16px;
-    max-height: 90vh;
-    overflow: auto;
-  }
-  
-  .companyImg {
-    width: 40%;
-    height: auto;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-  }
-  
-  .title {
-    text-align: center;
-    padding-top: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .contentFont {
-    color:black;
-  }
-  
-  .modalRight {
-    width: 60%;
-    padding: 0.5rem 1rem;
-  }
-  
-  .closeBtn {
-    position: fixed;
-    top: 8px;
-    right: 8px;
-  }
-  
-  .content {
-    display: flex;
     flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    /* margin-top: 1rem; */
-    padding: 1rem 1rem;
-    
+    width: 100%;
+    max-height: 95vh;
+    border-radius: 12px;
   }
-  
-  .btnContainer {
-    display:flex;
-    padding: 1rem 1rem;
-    justify-content: center;
+  .companyImg {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: contain;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 0;
+    display: block;
+    margin: 0 auto;
   }
+
+  .modalRight {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .content {
+    padding: 0.75rem 0.5rem;
+  }
+
   .btnContainer button {
-    width: 50%;
-    margin: .5rem;
-    padding: 16px 0;
-    /* border: none; */
-    border: 1px solid #411b57;
-    /* color: #ffffff; */
+    width: 70%;
   }
-  
-  .btnPrimary {
-    background-color: #411b57;
-    color: white;
-  }
-  
-  .btnOutline {
-    /* background-color: #a76a99; */
-    background-color: white;
-    color: #411b57;
-  }
-  
-  .bold {
-    font-weight: 600;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .modalContainer {
-      flex-direction: column;
-      width: 100%;
-      max-height: 95vh;
-      border-radius: 12px;
-    }
-    .companyImg {
-      width: 100%;
-      height: auto;
-      max-height: 40vh;
-      object-fit: cover;
-      border-top-right-radius: 12px;
-      border-top-left-radius: 12px;
-      border-bottom-left-radius: 0;
-    }
-
-    .modalRight {
-      width: 100%;
-      padding: 1rem;
-    }
-
-    .content {
-      padding: 0.75rem 0.5rem;
-    }
-
-    .btnContainer button {
-      width: 70%;
-    }
-  }
+}
