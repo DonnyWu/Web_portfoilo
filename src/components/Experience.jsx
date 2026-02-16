@@ -15,7 +15,7 @@ const Experiences = () => {
     <div
       name="experiences"
       className="text-gray-300"
-      style={{ background: 'linear-gradient(180deg, #F76C6C 0%, #F76C6C 10%, #102E43 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #008080 0%, #008080 10%, #102E43 100%)' }}
     >
       <div className="max-w-[1000px] mx-auto pt-20 flex flex-col justify-center align-middle w-full h-full">
         <div>
