@@ -12,7 +12,11 @@ const Experiences = () => {
   return (
     // #102E43
     // #0a192f
-    <div name="experiences" className="bg-[#102E43] text-gray-300">
+    <div
+      name="experiences"
+      className="text-gray-300"
+      style={{ background: 'linear-gradient(180deg, #F76C6C 0%, #F76C6C 10%, #102E43 100%)' }}
+    >
       <div className="max-w-[1000px] mx-auto pt-20 flex flex-col justify-center align-middle w-full h-full">
         <div>
           <p className="text-4xl font-bold inline">
@@ -69,6 +73,38 @@ const Experiences = () => {
             </div>
 
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                <img className="w-20 mx-auto"
+                        src={HTML}
+                        alt="HTML icon" />
+                <p>HTML</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                <img className="w-20 mx-auto"
+                          src={CSS}
+                          alt="CSS icon"
+                />
+                <p>CSS</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                <img
+                    className="w-20 mx-auto"
+                    src={Javascript}
+                    alt="Javascript icon"
+                />
+                <p>Javascript</p>
+            </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" 
+                 src={React_logo}
+                 alt="React icon"
+               />
+            <p>React</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto"
                         src={HTML}
                         alt="HTML icon" />

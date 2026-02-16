@@ -14,7 +14,7 @@ const Work = () => {
   return (
     // #102E43
     // #0a192f
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#102E43]">
+    <div name="work" className="w-full md:h-screen text-gray-300 bg-gradient-to-b from-[#102E43] to-[#24305E]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold  text-gray-300">

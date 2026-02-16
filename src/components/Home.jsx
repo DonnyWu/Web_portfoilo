@@ -36,7 +36,11 @@ const Home = () => {
       // #4484CE
       // #0d2137
       // #12354C
-    <div name="home" className="w-full h-screen bg-[#24305E]">
+    <div
+      name="home"
+      className="w-full h-screen"
+      style={{ background: 'linear-gradient(180deg, #24305E 0%, #24305E 50%, #102E43 100%)' }}
+    >
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="Message">
           <ul className="dynamic text-1xl sm:text-7xl">

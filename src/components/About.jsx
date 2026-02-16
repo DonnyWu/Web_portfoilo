@@ -7,7 +7,11 @@ const About = () => {
   // #304E62
 
   return (
-      <div name="about" className="w-full h-screen bg-[#F76C6C] text-[#D7D7D7]">
+      <div
+        name="about"
+        className="w-full h-screen text-[#D7D7D7]"
+        style={{ background: 'linear-gradient(180deg, #102E43 0%, #102E43 10%, #F76C6C 100%)' }}
+      >
           <div className="flex flex-col justify-center items-center w-full h-full">
             <img
               src={profile}
