@@ -18,10 +18,10 @@ const InterModal = ({ open, onClose }) => {
           <h1 className='title'>Details</h1>
           {/* Content Details */}
           <div className='content contentFont'>
-                      <p>{'\u2022'}Developed and maintained features for GENESIS64 recipe component, which aims to allow real-me use, creaon, and management of these recipes</p>
-                      <p>{'\u2022'}Created Automated test using selenium and Appium to improve QA tesng efforts efficiency</p>
+                      <p>{'\u2022'}Developed and maintained features for GENESIS64 recipe component, which aims to allow real-me use, creation, and management of these recipes</p>
+                      <p>{'\u2022'}Created Automated test using selenium and Appium to improve QA testing efforts efficiency</p>
                       <p>{'\u2022'}Worked with a team to migrate an exisng module: ScheduleWorX’s code from C++ to C# allowing for 64 bits architecture from 32 bit and easier code maintainability</p>
-                      <p>{'\u2022'}Setup and maintained QA environments, for manual tests conducted by QA team as well as for automaon tests</p>
+                      <p>{'\u2022'}Setup and maintained QA environments, for manual tests conducted by QA team as well as for automation tests</p>
           </div>
           <div className='btnContainer'>
             <button className='btnOutline' onClick={onClose}>
