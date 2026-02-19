@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 * {
   margin: 0;
@@ -44,15 +45,51 @@
   border: 1px solid rgba(11,46,60,0.06);
 }
 
-.companyImg {
+.polaroidWrap {
   width: 40%;
+  box-sizing: border-box;
+  padding: 10px 10px 18px; /* extra bottom to mimic polaroid base */
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  box-shadow: 0 10px 30px rgba(11,46,60,0.08);
+  border: 1px solid rgba(11,46,60,0.04);
+}
+
+/* subtle rotated/polaroid look */
+.polaroidWrap {
+  transform: rotate(-3deg);
+  transform-origin: center;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.polaroidWrap:hover {
+  transform: rotate(0deg) translateY(-6px);
+  box-shadow: 0 18px 40px rgba(11,46,60,0.14);
+}
+
+.companyImg {
+  width: 100%;
   height: auto;
-  max-height: 70vh;
+  max-height: 64vh;
   object-fit: contain;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-radius: 6px;
   display: block;
   background: transparent;
+}
+
+.polaroidCaption {
+  font-family: 'Patrick Hand', 'Inter', system-ui, cursive;
+  font-size: 0.95rem;
+  color: #0b2e3c;
+  margin-top: 8px;
+  align-self: flex-start;
+  padding-left: 8px;
+  transform: rotate(-1deg);
 }
 
 .title {
@@ -133,14 +170,27 @@
     max-height: 95vh;
     border-radius: 12px;
   }
+  .polaroidWrap {
+    width: 100%;
+    padding: 6px 6px 12px;
+    border-radius: 8px;
+    transform: none;
+    transition: none;
+  }
+
+  .polaroidCaption {
+    padding-left: 6px;
+    margin-top: 6px;
+    font-size: 0.95rem;
+    transform: none;
+  }
+
   .companyImg {
     width: 100%;
     height: auto;
     max-height: 40vh;
     object-fit: contain;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 0;
+    border-radius: 6px;
     display: block;
     margin: 0 auto;
   }
