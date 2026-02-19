@@ -13,7 +13,10 @@ const AllscriptModal = ({ open, onClose }) => {
         className='modalContainer'
       >
         {/* Experince logo */}
-        <img className='companyImg' src={image} alt='/' />
+        <div className="polaroidWrap">
+          <img className='companyImg' src={image} alt='/' />
+          <div className="polaroidCaption">test</div>
+        </div>
         <div className='modalRight'>
           <h1 className='title'>Details</h1>
           {/* Content Details */}
