@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 * {
@@ -48,7 +49,7 @@
 .polaroidWrap {
   width: 40%;
   box-sizing: border-box;
-  padding: 10px 10px 18px; /* extra bottom to mimic polaroid base */
+  padding: 10px 10px 6px; /* shorter bottom to reduce polaroid base */
   background: #ffffff;
   border-radius: 10px;
   display: flex;
@@ -58,6 +59,7 @@
   margin: 0;
   box-shadow: 0 10px 30px rgba(11,46,60,0.08);
   border: 1px solid rgba(11,46,60,0.04);
+  overflow: visible;
 }
 
 /* subtle rotated/polaroid look */
@@ -80,16 +82,18 @@
   border-radius: 6px;
   display: block;
   background: transparent;
+  margin-bottom: -6px; /* overlap image into the base to visually shorten the white strip */
 }
 
 .polaroidCaption {
-  font-family: 'Patrick Hand', 'Inter', system-ui, cursive;
-  font-size: 0.95rem;
+  font-family: 'Permanent Marker', 'Patrick Hand', 'Inter', system-ui, cursive;
+  font-size: 1rem;
   color: #0b2e3c;
-  margin-top: 8px;
+  margin-top: 6px;
   align-self: flex-start;
   padding-left: 8px;
   transform: rotate(-1deg);
+  line-height: 1;
 }
 
 .title {
@@ -172,7 +176,7 @@
   }
   .polaroidWrap {
     width: 100%;
-    padding: 6px 6px 12px;
+    padding: 6px 6px 4px; /* even shorter on mobile */
     border-radius: 8px;
     transform: none;
     transition: none;
@@ -193,6 +197,7 @@
     border-radius: 6px;
     display: block;
     margin: 0 auto;
+    margin-bottom: -4px; /* overlap on mobile as well */
   }
 
   .modalRight {
