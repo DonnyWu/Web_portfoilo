@@ -15,7 +15,6 @@ const InterModal = ({ open, onClose }) => {
         {/* Experince logo */}
         <div className="polaroidWrap">
           <img className='companyImg' src={image1} alt='/' />
-          <div className="polaroidCaption">test</div>
         </div>
         <div className='modalRight'>
           <h1 className='title'>Details</h1>

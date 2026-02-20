@@ -15,7 +15,7 @@ const AllscriptModal = ({ open, onClose }) => {
         {/* Experince logo */}
         <div className="polaroidWrap">
           <img className='companyImg' src={image} alt='/' />
-          <div className="polaroidCaption">test</div>
+          <div className="polaroidCaption">meet the team!</div>
         </div>
         <div className='modalRight'>
           <h1 className='title'>Details</h1>
