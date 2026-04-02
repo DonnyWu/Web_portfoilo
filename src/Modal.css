@@ -47,7 +47,7 @@
 }
 
 .polaroidWrap {
-  width: 40%;
+  flex: 0 0 40%;
   box-sizing: border-box;
   padding: 10px 10px 6px; /* shorter bottom to reduce polaroid base */
   background: #ffffff;
@@ -56,6 +56,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  align-self: flex-start; /* avoid stretching to match modal height */
   margin: 0;
   box-shadow: 0 10px 30px rgba(11,46,60,0.08);
   border: 1px solid rgba(11,46,60,0.04);
@@ -175,7 +176,7 @@
     border-radius: 12px;
   }
   .polaroidWrap {
-    width: 100%;
+    flex: 0 0 100%;
     padding: 6px 6px 4px; /* even shorter on mobile */
     border-radius: 8px;
     transform: none;
