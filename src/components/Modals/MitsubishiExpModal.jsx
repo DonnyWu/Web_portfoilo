@@ -18,7 +18,7 @@ const InterModal = ({ open, onClose }) => {
           <div className="polaroidCaption">A visit to Mitsubishi Electric Headquarters Tokyo 7-11-24</div>
         </div>
         <div className='modalRight'>
-          <h1 className='title'>Details</h1>
+          <h1 className='title'>Software Development Engineer</h1>
           {/* Content Details */}
           <div className='content contentFont'>
                       <p>{'\u2022'}Developed and maintained features for GENESIS64 recipe component, which aims to allow real-me use, creation, and management of these recipes</p>

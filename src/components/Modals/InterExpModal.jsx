@@ -15,10 +15,10 @@ const InterModal = ({ open, onClose }) => {
         {/* Experince logo */}
         <div className="polaroidWrap">
           <img className='companyImg' src={image1} alt='/' />
-          <div className="polaroidCaption">camera shy</div>
+          <div className="polaroidCaption">camera shy<br />2023</div>
         </div>
         <div className='modalRight'>
-          <h1 className='title'>Details</h1>
+          <h1 className='title'>Software Engineer</h1>
           {/* Content Details */}
           <div className='content contentFont'>
             {/* <p>{'\u2022'} Implemented InterPro Solutions’ flagship application EZMaxMobile based on client’s requirements using <br/>Java, Spring Boot, JSON, Angular, Struts, Typescript, and IBM Maximo custom Business Object APIs.</p>
