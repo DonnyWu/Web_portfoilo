@@ -15,10 +15,10 @@ const AllscriptModal = ({ open, onClose }) => {
         {/* Experince logo */}
         <div className="polaroidWrap">
           <img className='companyImg' src={image} alt='/' />
-          <div className="polaroidCaption">meet the team!</div>
+          <div className="polaroidCaption">meet the team! <br /> Summer 2019</div>
         </div>
         <div className='modalRight'>
-          <h1 className='title'>Details</h1>
+          <h1 className='title'>Software Engineer Intern</h1>
           {/* Content Details */}
           <div className='content contentFont'>
             {/* <p>{'\u2022'} Used C# in Visual Studio and ASP .NET to implement test cases that can be called by Allscripts’ test server</p>

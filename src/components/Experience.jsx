@@ -104,7 +104,7 @@ const Experiences = () => {
             <p>React</p>
           </div>
 
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          {/* <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto"
                         src={HTML}
                         alt="HTML icon" />
@@ -134,7 +134,7 @@ const Experiences = () => {
                  alt="React icon"
                />
             <p>React</p>
-          </div>
+          </div> */}
 
         </div>
       </div>
