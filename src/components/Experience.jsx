@@ -7,6 +7,11 @@ import Github from "../logo/github_logo.png";
 import Dotnet from "../logo/.Net_logo.png"
 import Csharp from "../logo/Logo_C_sharp.svg.png"
 import Git from "../logo/Git-Icon.png"
+import Copilot from "../logo/github-copilot-icon.webp"
+import Java from "../logo/Java.webp"
+import Springboot from "../logo/Springboot.webp" 
+import mongoDb from "../logo/mongodb.png"
+import python from "../logo/python.png"
 
 const Experiences = () => {
   return (
@@ -34,24 +39,12 @@ const Experiences = () => {
             {/*    />*/}
             {/*    <p>.NET</p>*/}
             {/*</div>*/}
-
-
+            
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                <img
-                    className="w-20 mx-auto"
-                    src={Dotnet}
-                    alt="Dotnet icon"
-                />
-                <p>.NET</p>
-            </div>
-
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                <img
-                    className="w-20 mx-auto"
-                    src={Csharp}
-                    alt="Csharp icon"
-                />
-                <p>C#</p>
+                <img className="w-20 mx-auto"
+                        src={Copilot}
+                        alt="Copilot icon" />
+                <p>Github Copilot</p>
             </div>
 
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
@@ -73,6 +66,33 @@ const Experiences = () => {
             </div>
 
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                <img
+                    className="w-20 mx-auto"
+                    src={python}
+                    alt="Python icon"
+                />
+                <p>Python</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                <img
+                    className="w-20 mx-auto"
+                    src={Dotnet}
+                    alt="Dotnet icon"
+                />
+                <p>.NET</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                <img
+                    className="w-20 mx-auto"
+                    src={Csharp}
+                    alt="Csharp icon"
+                />
+                <p>C#</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img className="w-20 mx-auto"
                         src={HTML}
                         alt="HTML icon" />
@@ -88,53 +108,37 @@ const Experiences = () => {
             </div>
 
             <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" 
+                  src={React_logo}
+                  alt="React icon"
+                />
+              <p>React</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                <img className="w-20 mx-auto"
+                          src={Java}
+                          alt="Java icon"
+                />
+                <p>Java</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                 <img
                     className="w-20 mx-auto"
-                    src={Javascript}
-                    alt="Javascript icon"
+                    src={Springboot}
+                    alt="Springboot icon"
                 />
-                <p>Javascript</p>
+                <p>Springboot</p>
             </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" 
-                 src={React_logo}
-                 alt="React icon"
+                 src={mongoDb}
+                 alt="MongoDB icon"
                />
-            <p>React</p>
+            <p>MongoDB</p>
           </div>
-
-          {/* <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                <img className="w-20 mx-auto"
-                        src={HTML}
-                        alt="HTML icon" />
-                <p>HTML</p>
-            </div>
-
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                <img className="w-20 mx-auto"
-                          src={CSS}
-                          alt="CSS icon"
-                />
-                <p>CSS</p>
-            </div>
-
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                <img
-                    className="w-20 mx-auto"
-                    src={Javascript}
-                    alt="Javascript icon"
-                />
-                <p>Javascript</p>
-            </div>
-
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" 
-                 src={React_logo}
-                 alt="React icon"
-               />
-            <p>React</p>
-          </div> */}
 
         </div>
       </div>
