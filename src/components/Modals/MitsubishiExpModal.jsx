@@ -21,10 +21,10 @@ const InterModal = ({ open, onClose }) => {
           <h1 className='title'>Software Development Engineer</h1>
           {/* Content Details */}
           <div className='content contentFont'>
-                      <p>{'\u2022'}Developed and maintained features for GENESIS64 recipe component, which aims to allow real-me use, creation, and management of these recipes</p>
-                      <p>{'\u2022'}Created Automated test using selenium and Appium to improve QA testing efforts efficiency</p>
-                      <p>{'\u2022'}Worked with a team to migrate an exisng module: ScheduleWorX’s code from C++ to C# allowing for 64 bits architecture from 32 bit and easier code maintainability</p>
-                      <p>{'\u2022'}Setup and maintained QA environments, for manual tests conducted by QA team as well as for automation tests</p>
+                      <p>{'\u2022'}Developed core features for the GENESIS64 recipe component, enabling real-time creation and management of industrial manufacturing recipes</p>
+                      <p>{'\u2022'}Automated QA workflows by developing end-to-end test suites using Selenium and Appium, significantly reducing manual testing cycles</p>
+                      <p>{'\u2022'}Collaborated on Migrating ScheduleWorX module code from C++ to C# , transitioning the architecture from 32-bit to 64-bit to enhance system performance and maintainability</p>
+                      <p>{'\u2022'}Managed and configured QA environments, for both manual tests and automated testing, ensuring reliable test execution</p>
           </div>
           <div className='btnContainer'>
             <button className='btnOutline' onClick={onClose}>

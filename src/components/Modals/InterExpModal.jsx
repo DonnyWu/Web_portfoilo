@@ -25,10 +25,10 @@ const InterModal = ({ open, onClose }) => {
             <p>{'\u2022'} Used React JS to customize the layout of InterPro Solutions’ EZMaxRequest</p>
             <p>{'\u2022'} Used developer environment to test the UI of EZMaxMobile, confirming it is crossed-referenced with IBM Maximo</p>
             <p>{'\u2022'} Handle incoming tickets pertaining to client’s custom built EZMaxMobile with support team and team architect</p> */}
-            <p>{'\u2022'}Developed custom mobile solutions for InterPro’s flagship application, EZMaxMobile, integrating Java, Spring Boot, and Angular with IBM Maximo custom Business Object APIs</p>
-            <p>{'\u2022'}Refined the user interface for EZMaxRequest using React JS to deliver a custom build based on customer requirements</p>
-            <p>{'\u2022'}Executed UI/UX testing in a developer environment to ensure cross-referencing and data integrity with IBM Maximo backend systems</p>
-            <p>{'\u2022'}Collaborated with architects and support teams to resolve complex technical tickets, providing high-level troubleshooting for client-specific EZMaxMobile configurations</p>
+            <p>{'\u2022'}Developed flagship mobile applications (EZMaxMobile) using Java, Spring Boot, and TypeScript, integrating complex IBM Maximo Business Object APIs to meet custom client requirements</p>
+            <p>{'\u2022'}Customized UI/UX layouts for the EZMaxRequest platform using React.js, improving user navigation and interface responsiveness</p>
+            <p>{'\u2022'}Validated cross-platform compatibility between mobile interfaces and backend IBM Maximo databases throughrigorous environment testing</p>
+            <p>{'\u2022'}Resolved high-priority technical tickets in collaboration with architects and support teams to maintain Client-Specific builds</p>
           </div>
           <div className='btnContainer'>
             <button className='btnOutline' onClick={onClose}>

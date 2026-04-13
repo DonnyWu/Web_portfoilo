@@ -82,7 +82,7 @@ const Contact = () => {
               Email
             </p>
             <p className="text-gray-300 py-4 text-left font-bold">
-             <b>Email:</b><a href="mailto:Donnie.wu@alum.cs.umass.edu"> Donnie.wu@alum.cs.umass.edu</a>
+             <b>Email:</b><a href="mailto:Donniewei.Wu@gmail.com">Donniewei.Wu@gmail.com</a>
             </p>  
           </div>
         </div>
