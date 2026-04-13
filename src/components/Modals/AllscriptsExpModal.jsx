@@ -26,11 +26,11 @@ const AllscriptModal = ({ open, onClose }) => {
             <p>{'\u2022'} Created audit test cases that ensures authorization information are crossed checked within Access Manager Database</p>
             <p>{'\u2022'} Reported bugs found within Access Manager on Team Foundation Server and worked with QAs, Developers, and the Principal Architect to resolve the issue</p>
             <p>{'\u2022'} Participated in code review with my mentors to ensure test files followed good coding practices</p> */}
-            <p>{'\u2022'}Developed automated test cases using the ASP.NET framework to interface with the Allscripts test server, improving testing efficiency and reliability</p>
-            <p>{'\u2022'}Automated business-layer regression tests for AccessManager software using Microsoft Azure web services, reducing manual testing overhead.</p>
+            <p>{'\u2022'}Automated regression testing for the Access Manager business layer using C#, ASP.NET, and Microsoft Azure web services</p>
+            <p>{'\u2022'}Developed audit test cases to verify authorization security protocols within the Access Manager database</p>
             <p>{'\u2022'}Designed audit test cases to validate and cross-check authorization data within the AccessManager SQL Database,data integrity and security compliance.</p>
-            <p>{'\u2022'}Managed the end-to-end defect lifecycle by identifying and reporting bugs via the Team Foundation Server, collaborating with developers and the Principal Architect to resolve issues.</p>
-            <p>{'\u2022'}Upheld high code quality standards through active participation in peer code reviews, ensuring all test scripts adhere to industry standards and maintainable design patterns</p>
+            <p>{'\u2022'}Setup quality assurance testing environment in order to run test case manually within Access Manager</p>
+            <p>{'\u2022'}Identified and documented critical bugs using Team Foundation Server (TFS), collaborating with Developers and the Principal Architect to implement fixes</p>
 
           </div>
           <div className='btnContainer'>

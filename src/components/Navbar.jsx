@@ -4,7 +4,7 @@ import { GrNotes } from "react-icons/gr";
 import { HiMailOpen } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
-import pdf from '../Documents/Donnies_Resume_April_2026.docx.pdf';
+import pdf from '../Documents/Donnies_Resume_May_2026.pdf';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
