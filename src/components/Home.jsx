@@ -1,35 +1,6 @@
 import React from "react";
-import { View, Image, StyleSheet } from "react-native";
 import { GrLocation } from "react-icons/gr";
 import "../App.css";
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: 50,
-    paddingBottom: 50,
-    position: "relative",
-  },
-  stretch: {
-    width: 300,
-    height: 300,
-    borderRadius: 400 / 2,
-    resizeMode: "stretch",
-  },
-});
-
-const dynamic = StyleSheet.create({
-  container: {
-    paddingTop: 50,
-    paddingBottom: 50,
-    // position: "absolute",
-  },
-  stretch: {
-    width: 300,
-    height: 300,
-    borderRadius: 400 / 2,
-    resizeMode: "stretch",
-  },
-});
 
 const Home = () => {
   return (

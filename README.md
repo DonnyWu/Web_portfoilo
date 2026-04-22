@@ -68,3 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Branching & Deployment
+
+This repository uses a simple workflow to keep your source (`main`) separate from the built site served by GitHub Pages (`gh-pages`). Follow these rules and tips:
+
+- Branches
+	- `dev`: Primary working branch. Make feature changes here (or create short-lived feature branches from `dev`, e.g. `feature/my-feature`).
+	- `main`: Canonical source branch. The repository contains CI workflows that will keep `main` in sync with `dev` when possible.
+	- `gh-pages`: Contains the generated static site that GitHub Pages serves.
+
+- Automation behavior
+	- On push to `dev` the workflow `.github/workflows/dev-sync.yml` will:
+		1. Install dependencies and build the app (`npm run build`).
+		2. Publish the `build/` output to the `gh-pages` branch.
+		3. Attempt to merge `dev` into `main`. If the merge succeeds it will push to `main`. If there are merge conflicts the workflow will create a pull request for manual resolution.
+	- On push to `main` the workflow `.github/workflows/deploy.yml` will also build and publish `build/` to `gh-pages`.
+
+- Important rules & recommendations
+	- Do NOT commit `build/` to `main`. `build/` is ignored by `.gitignore` to prevent generated files from polluting source history.
+	- Test and build locally before pushing to `dev`:
+		- `npm ci`
+		- `npm run build`
+		- `npx serve -s build` (optional preview)
+	- If you want code review / stricter control, enable branch protection on `main`. When protection prevents direct pushes the workflow will open a PR instead, allowing manual review and merge.
+
+- Typical workflow (safe, recommended)
+	1. `git checkout dev`
+	2. `git checkout -b feature/my-feature`
+	3. Make changes, `git add . && git commit -m "feat: ..."`
+	4. `git push origin feature/my-feature` and open a PR into `dev` (optional), or push directly to `dev`.
+	5. On push to `dev`, the site will be built & deployed automatically; `main` will be updated when the merge is clean.
+
+- Quick commands
+	- Switch to `dev`: `git checkout dev`
+	- Create a feature branch: `git checkout -b feature/my-feature`
+	- Push feature branch: `git push origin feature/my-feature`
+	- Trigger deploy (push to `dev`): `git push origin dev`
+
+If you want, I can also add a short CONTRIBUTING or developer guide file with these instructions.

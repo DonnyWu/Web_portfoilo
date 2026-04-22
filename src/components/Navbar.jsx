@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaLink } from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrNotes } from "react-icons/gr";
 import { HiMailOpen } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 import pdf from '../Documents/Donnies_Resume_May_2026.pdf';
 

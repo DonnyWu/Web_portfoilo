@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaLink } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
