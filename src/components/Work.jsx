@@ -1,5 +1,4 @@
-import React, { useState }from "react";
-import HTML from "../logo/html_logo.png";
+import React, { useState } from "react";
 import InterExpModal from "./Modals/InterExpModal";
 import AllscriptExpModal from "./Modals/AllscriptsExpModal";
 import MitsubishiExpModal from "./Modals/MitsubishiExpModal"
