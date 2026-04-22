@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Web_portfoilo/static/css/main.562271c2.css",
-    "main.js": "/Web_portfoilo/static/js/main.9953ac2d.js",
+    "main.css": "/Web_portfoilo/static/css/main.81c52aa1.css",
+    "main.js": "/Web_portfoilo/static/js/main.34250629.js",
     "static/js/787.28cb0dcd.chunk.js": "/Web_portfoilo/static/js/787.28cb0dcd.chunk.js",
     "static/media/mitsubishi-board.jpeg": "/Web_portfoilo/static/media/mitsubishi-board.b48c03d7e8f6a6c7d79c.jpeg",
     "static/media/Allscripts-Platform-team.jpg": "/Web_portfoilo/static/media/Allscripts-Platform-team.b9e59cf3a8ad87ee53b5.jpg",
@@ -14,17 +14,16 @@
     "static/media/html_logo.png": "/Web_portfoilo/static/media/html_logo.2ba4fabc69a89a8f71e6.png",
     "static/media/css_logo.png": "/Web_portfoilo/static/media/css_logo.69a82c2d9e45c933a9cb.png",
     "static/media/Java.webp": "/Web_portfoilo/static/media/Java.256ea6a5d5c5639bfbe4.webp",
-    "static/media/javascript_logo.png": "/Web_portfoilo/static/media/javascript_logo.1ccd6ef9bb1f9c84ef00.png",
     "static/media/mitsubishi.jpg": "/Web_portfoilo/static/media/mitsubishi.716a3008bf360a25e597.jpg",
     "static/media/Springboot.webp": "/Web_portfoilo/static/media/Springboot.064f0a745470999a7844.webp",
     "static/media/github-copilot-icon.webp": "/Web_portfoilo/static/media/github-copilot-icon.683095d383cc449d8ea6.webp",
     "index.html": "/Web_portfoilo/index.html",
-    "main.562271c2.css.map": "/Web_portfoilo/static/css/main.562271c2.css.map",
-    "main.9953ac2d.js.map": "/Web_portfoilo/static/js/main.9953ac2d.js.map",
+    "main.81c52aa1.css.map": "/Web_portfoilo/static/css/main.81c52aa1.css.map",
+    "main.34250629.js.map": "/Web_portfoilo/static/js/main.34250629.js.map",
     "787.28cb0dcd.chunk.js.map": "/Web_portfoilo/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.562271c2.css",
-    "static/js/main.9953ac2d.js"
+    "static/css/main.81c52aa1.css",
+    "static/js/main.34250629.js"
   ]
 }
