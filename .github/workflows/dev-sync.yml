@@ -46,11 +46,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-          git fetch origin main
-          git fetch origin $BRANCH:$BRANCH
+          # Fetch both main and the pushed branch without updating local checked-out refs
+          git fetch origin main $BRANCH
           git checkout main
           git pull origin main
-          if git merge --no-edit $BRANCH; then
+          # Merge from the remote ref to avoid fetching into a checked-out branch
+          if git merge --no-edit origin/${BRANCH}; then
             git push origin main
             echo "MERGE_STATUS=merged" >> $GITHUB_OUTPUT
           else
