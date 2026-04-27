@@ -105,5 +105,3 @@ This repository uses a simple workflow to keep your source (`main`) separate fro
 	- Create a feature branch: `git checkout -b feature/my-feature`
 	- Push feature branch: `git push origin feature/my-feature`
 	- Trigger deploy (push to `dev`): `git push origin dev`
-
-If you want, I can also add a short CONTRIBUTING or developer guide file with these instructions.
