@@ -4,7 +4,7 @@ import profile from '../logo/Profile.jpg';
 // HID card ratio: 54mm x 85.6mm => aspect ratio width/height = 54/85.6
 const HID_RATIO = '54 / 85.6';
 
-const SecurityCard = ({ name = 'Donnie Wu', title = 'Software Engineer', id = 'ID-2020' }) => {
+const SecurityCard = ({ name = 'Donnie Wu', title = 'Software Engineer', id = 'UMA-2020' }) => {
   return (
     <div className="card-wrapper relative w-56 sm:w-64 md:w-72 lg:w-80 flex-shrink-0">
 
