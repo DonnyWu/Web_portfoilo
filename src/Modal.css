@@ -86,6 +86,22 @@
   margin-bottom: -6px; /* overlap image into the base to visually shorten the white strip */
 }
 
+/* stand-in for .companyImg until real project screenshots exist */
+.polaroidPlaceholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  max-height: 64vh;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d7dee6;
+  color: #6b7f8c;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+  margin-bottom: -6px; /* overlap into the base to visually shorten the white strip */
+}
+
 .polaroidCaption {
   font-family: 'Permanent Marker', 'Patrick Hand', 'Inter', system-ui, cursive;
   font-size: 1rem;
@@ -197,6 +213,12 @@
     object-fit: contain;
     border-radius: 6px;
     display: block;
+    margin: 0 auto;
+    margin-bottom: -4px; /* overlap on mobile as well */
+  }
+
+  .polaroidPlaceholder {
+    max-height: 40vh;
     margin: 0 auto;
     margin-bottom: -4px; /* overlap on mobile as well */
   }
