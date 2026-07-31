@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import InterExpModal from "./Modals/InterExpModal";
-import AllscriptExpModal from "./Modals/AllscriptsExpModal";
-import MitsubishiExpModal from "./Modals/MitsubishiExpModal"
+import InfoModal from "./Modals/InfoModal";
 import interpro2 from '../logo/interpro.png';
 import Allscript from '../logo/Allscript-logo.png';
 import Mitsubishi from '../logo/mitsubishi.jpg';
+import MitsubishiBoard from '../logo/mitsubishi-board.jpeg';
+import AllscriptsTeam from '../logo/Allscripts-Platform-team.jpg';
 
 const Work = () => {
     const [openModal0, setOpenModal0] = useState(false);
@@ -23,13 +23,24 @@ const Work = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          
+
           <div
                 style={{ backgroundImage: `url(${Mitsubishi})` }}
                 className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
             >
                 <div>
-                    <MitsubishiExpModal open={openModal2} onClose={() => setOpenModal2(false)} />
+                    <InfoModal
+                        open={openModal2}
+                        onClose={() => setOpenModal2(false)}
+                        image={MitsubishiBoard}
+                        caption="A visit to Mitsubishi Electric Headquarters Tokyo 7-11-24"
+                        title="Software Development Engineer"
+                    >
+                      <p>{'•'}Developed core features for the GENESIS64 recipe component, enabling real-time creation and management of industrial manufacturing recipes</p>
+                      <p>{'•'}Automated QA workflows by developing end-to-end test suites using Selenium and Appium, significantly reducing manual testing cycles</p>
+                      <p>{'•'}Collaborated on Migrating ScheduleWorX module code from C++ to C# , transitioning the architecture from 32-bit to 64-bit to enhance system performance and maintainability</p>
+                      <p>{'•'}Managed and configured QA environments, for both manual tests and automated testing, ensuring reliable test execution</p>
+                    </InfoModal>
                     <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center">
                         <span className="text-2xl font-bold text-white tracking-wider text-center">
                             Mitsubishi Electric Iconics Digital Solutions
@@ -46,7 +57,22 @@ const Work = () => {
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
           >
             <div>
-              <InterExpModal open={openModal1} onClose={() => setOpenModal1(false)} />
+              <InfoModal
+                open={openModal1}
+                onClose={() => setOpenModal1(false)}
+                image={interpro2}
+                caption={<>camera shy<br />2023</>}
+                title="Software Engineer"
+              >
+                {/* <p>{'•'} Implemented InterPro Solutions’ flagship application EZMaxMobile based on client’s requirements using <br/>Java, Spring Boot, JSON, Angular, Struts, Typescript, and IBM Maximo custom Business Object APIs.</p>
+                <p>{'•'} Used React JS to customize the layout of InterPro Solutions’ EZMaxRequest</p>
+                <p>{'•'} Used developer environment to test the UI of EZMaxMobile, confirming it is crossed-referenced with IBM Maximo</p>
+                <p>{'•'} Handle incoming tickets pertaining to client’s custom built EZMaxMobile with support team and team architect</p> */}
+                <p>{'•'}Developed flagship mobile applications (EZMaxMobile) using Java, Spring Boot, and TypeScript, integrating complex IBM Maximo Business Object APIs to meet custom client requirements</p>
+                <p>{'•'}Customized UI/UX layouts for the EZMaxRequest platform using React.js, improving user navigation and interface responsiveness</p>
+                <p>{'•'}Validated cross-platform compatibility between mobile interfaces and backend IBM Maximo databases throughrigorous environment testing</p>
+                <p>{'•'}Resolved high-priority technical tickets in collaboration with architects and support teams to maintain Client-Specific builds</p>
+              </InfoModal>
               <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center">
                 <span className="text-2xl font-bold text-white tracking-wider text-center">
                   InterPro Solutions
@@ -63,7 +89,24 @@ const Work = () => {
                 className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
             >
                 <div>
-                    <AllscriptExpModal open={openModal0} onClose={() => setOpenModal0(false)} />
+                    <InfoModal
+                        open={openModal0}
+                        onClose={() => setOpenModal0(false)}
+                        image={AllscriptsTeam}
+                        caption={<>meet the team! <br /> Summer 2019</>}
+                        title="Software Engineer Intern"
+                    >
+                      {/* <p>{'•'} Used C# in Visual Studio and ASP .NET to implement test cases that can be called by Allscripts’ test server</p>
+                      <p>{'•'} Used Microsoft Azure web service to automate regression test cases in the business layer of Allscripts’ AccessManager Software</p>
+                      <p>{'•'} Created audit test cases that ensures authorization information are crossed checked within Access Manager Database</p>
+                      <p>{'•'} Reported bugs found within Access Manager on Team Foundation Server and worked with QAs, Developers, and the Principal Architect to resolve the issue</p>
+                      <p>{'•'} Participated in code review with my mentors to ensure test files followed good coding practices</p> */}
+                      <p>{'•'}Automated regression testing for the Access Manager business layer using C#, ASP.NET, and Microsoft Azure web services</p>
+                      <p>{'•'}Developed audit test cases to verify authorization security protocols within the Access Manager database</p>
+                      <p>{'•'}Designed audit test cases to validate and cross-check authorization data within the AccessManager SQL Database,data integrity and security compliance.</p>
+                      <p>{'•'}Setup quality assurance testing environment in order to run test case manually within Access Manager</p>
+                      <p>{'•'}Identified and documented critical bugs using Team Foundation Server (TFS), collaborating with Developers and the Principal Architect to implement fixes</p>
+                    </InfoModal>
                     <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center">
                         <span className="text-2xl font-bold text-white tracking-wider text-center">
                             Allscripts
@@ -74,7 +117,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            
+
         </div>
       </div>
     </div>
